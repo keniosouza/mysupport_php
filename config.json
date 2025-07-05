@@ -1,0 +1,71 @@
+  {
+  "app":{
+    "company":1,
+    "title":"MySupport",
+    "version":"24",
+    "release":"2.3",
+    "name":"Alvorada",
+    "url_aplication":"http://localhost/mysupport/",
+    "delay" : 0,
+    "security":{
+      "session_time":"30",
+      "method":"aes-256-cbc",
+      "first_key":"1B0B043A1C185F261D",
+      "second_key":"1B0B043A0C05422C1E0A",
+      "hash":"43170E01071F0D3B1437"
+    },
+    "mail":{
+      "host":"mail.mysupport.com.br",
+      "username":"mysupport@mysupport.com.br",
+      "password":"@Sun147oi",
+      "port":"465",
+      "email":"mysupport@mysupport.com.br",
+      "description":"MySupport | Gestor Empresarial"
+    },
+    "log":{
+      "active":true
+    },
+    "environment":"development",
+    "database":{
+      "production":{
+        "host":"localhost",
+        "name":"mysupport",
+        "port":"3306",
+        "user":"root",
+        "password":"root",
+        "charset":"utf8"
+      },
+      "development":{
+        "host":"api_mysql",
+        "name":"mysupport",
+        "port":"3306",
+        "user":"mysql",
+        "password":"sun147oi",
+        "charset":"utf8"
+      }
+    },
+    "credits":{
+      "name":"SCT - Souza Consultoria Tecnológica",
+      "site":"www.souza.inf.br",
+      "logo":"image/sct.png"
+    },
+    "files":{
+      "users" : [
+        {
+          "name" : "avatar",
+          "width": 200,
+          "height": 200,
+          "jpg": 80,
+          "png": 80
+        },
+        {
+          "name" : "profile",
+          "width": 350,
+          "height": 350,
+          "jpg": 80,
+          "png": 80
+        }
+      ]
+    }
+  }
+}

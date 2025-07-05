@@ -1,0 +1,203 @@
+:root {
+  --bs-blue: #0d6efd;
+  --bs-indigo: #6610f2;
+  --bs-purple: #6f42c1;
+  --bs-pink: #d63384;
+  --bs-red: #dc3545;
+  --bs-orange: #fd7e14;
+  --bs-yellow: #ffc107;
+  --bs-green: #198754;
+  --bs-teal: #20c997;
+  --bs-cyan: #0dcaf0;
+  --bs-white: #fff;
+  --bs-gray: #6c757d;
+  --bs-gray-dark: #343a40;
+
+  --bs-primary: #377dff;
+  --bs-primary-rgb: 55,125,255;
+  --bs-hover: #2a6eeb;
+  --bs-secondary: #71869d;
+  --bs-secondary-rgb: 113,134,157;
+  --bs-success: #00c9a7;
+  --bs-success-rgb: 0,201,167;
+  --bs-info: #38c0d5;
+  --bs-info-rgb: 56,192,213;
+  --bs-warning: #f5ca99;
+  --bs-warning-rgb: 245,202,153;
+  --bs-danger: #ed4c78;
+  --bs-danger-rgb: 237,76,120;
+  --bs-light: #f8f9fa;
+  --bs-dark: #333333;
+
+  --bs-btn-padding-x: 0.75rem;
+  --bs-btn-padding-y: 0.375rem;
+  --bs-btn-font-family: var(--bs-font-sans-serif);
+  --bs-btn-font-size: 1rem;
+  --bs-btn-font-weight: 400;
+  --bs-btn-line-height: 1.5;
+  --bs-btn-color: #fff;
+  --bs-btn-bg: var(--bs-primary);
+  --bs-btn-border-width: var(--bs-border-width);
+  --bs-btn-border-color: var(--bs-primary);
+  --bs-btn-border-radius: var(--bs-border-radius);
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #0056b3;
+  --bs-btn-hover-border-color: #004085;
+  --bs-btn-focus-color: #fff;
+  --bs-btn-focus-bg: #0056b3;
+  --bs-btn-focus-border-color: #004085;
+  --bs-btn-focus-box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #004085;
+  --bs-btn-active-border-color: #003366;
+  --bs-btn-active-box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: var(--bs-primary);
+  --bs-btn-disabled-border-color: var(--bs-primary);
+
+  --bs-nav-pills-link-active-bg: var(--bs-primary);
+
+}
+
+/* Estilo do corpo da página */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+a{
+
+  cursor: pointer;
+
+}
+
+.border-dashed{
+
+  border: var(--bs-border-width) dashed var(--bs-border-color) !important;
+
+}
+
+.border-dashed:hover{
+
+  border: var(--bs-border-width) solid var(--bs-border-color) !important;
+
+}
+
+.cursor-pointer{
+
+  cursor: pointer;
+
+}
+
+/* Estilo da barra de navegação (navbar) */
+.bg-glass {
+  background: rgba(255, 255, 255, 0.3) !important; /* Fundo branco transparente da navbar */
+  backdrop-filter: blur(10px) saturate(125%); /* Desfoque e saturação do fundo */
+  -webkit-backdrop-filter: blur(10px) saturate(125%); /* Suporte para navegadores WebKit (Safari, iOS) */
+}
+
+/**
+ * Estilos personalizados para barra de rolagem
+ * Baseado em https://ishadeed.com/article/custom-scrollbars-css/
+ */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 17px; /* Largura da barra de rolagem */
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background-color: #e4e4e4; /* Cor de fundo da área de rastreamento */
+  border-radius: 0px; /* Bordas arredondadas */
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  border-radius: 100px; /* Bordas arredondadas do botão de rolagem */
+  border: 5px solid transparent; /* Borda transparente */
+  background-clip: content-box;
+  background-color: var(--bs-primary); /* Cor do botão de rolagem */
+}
+
+.custom-scrollbar {
+  overflow-y: auto; /* Rolagem vertical automática */
+}
+
+/*
+  Documentação CSS
+
+  Descrição:
+  O código CSS a seguir define um estilo para uma classe chamada 'disabled-link'.
+  Elementos com essa classe terão seus eventos de ponteiro desabilitados, tornando-os não responsivos às interações do usuário.
+
+  Regras CSS:
+  - Nome da Classe: .disabled-link
+  - Propriedade: pointer-events
+    - Valor: none
+      - Explicação: Desabilita os eventos de ponteiro nos elementos com esta classe, impedindo que recebam entrada do usuário.
+
+  Utilização:
+  Aplique a classe 'disabled-link' a elementos HTML (geralmente tags <a>) para indicar visualmente que estão desabilitados e não devem responder às interações do usuário.
+*/
+.disabled-link {
+
+  pointer-events: none;
+
+}
+
+.display-none{
+
+  display: none !important;
+
+}
+
+.w-5{
+
+  width: 5% !important;
+
+}
+
+.w-15{
+
+  width: 15% !important;
+
+}
+
+@keyframes fadeInUp {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+.fadeInUp-animation--15 {
+  animation: 1.5s fadeInUp;
+}
+
+.fadeInUp-animation--10 {
+  animation: 1.0s fadeInUp;
+}
+
+.btn-primary {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: var(--bs-primary);
+  --bs-btn-border-color: var(--bs-hover);
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: var(--bs-hover);
+  --bs-btn-hover-border-color: var(--bs-hover);
+  --bs-btn-focus-shadow-rgb: 49, 132, 253;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: var(--bs-hover);
+  --bs-btn-active-border-color: var(--bs-hover);
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: var(--bs-hover);
+  --bs-btn-disabled-border-color: var(--bs-hover);
+}
+
+.form-check-input:checked {
+  background-color: var(--bs-primary);
+  border-color: var(--bs-primary);
+}

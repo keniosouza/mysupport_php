@@ -1,0 +1,13 @@
+# Ignora a pasta de arquivos armazenados
+#app/storage/files/
+
+# Ignora a pasta de arquivos temporários
+app/storage/temp/
+
+bkp
+temp
+mysupport.softwiki.com.br
+document/*
+
+# Ignora arquivo de configuração
+#app/config/

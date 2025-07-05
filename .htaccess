@@ -1,0 +1,24 @@
+RewriteEngine on
+#RewriteBase /
+#RewriteCond %{HTTPS} off
+#RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+DirectoryIndex index.php
+
+#Determina o timezone
+php_value date.timezone "America/Sao_Paulo"
+
+#Redirecionamento
+RewriteRule ^redefenir/(.*)$ index.php?hash=$1
+RewriteRule ^download/release/(.*)$ index.php?highlighter=download_release&data=$1
+
+#URLS de Backup
+RewriteRule ^backup/salvar/(.*)$ app/index.php?operation=backup_save&data=$1
+RewriteRule ^backup/listar/(.*)$ app/index.php?operation=backup_list&data=$1
+RewriteRule ^log/salvar/$ app/index.php
+
+# php -- BEGIN cPanel-generated handler, do not edit
+# Defina o pacote “ea-php82” como a linguagem padrão de programação “PHP”.
+<IfModule mime_module>
+  AddHandler application/x-httpd-ea-php82___lsphp .php .php8 .phtml
+</IfModule>
+# php -- END cPanel-generated handler, do not edit
