@@ -4,8 +4,8 @@
     "title":"MySupport",
     "version":"24",
     "release":"2.3",
-    "name":"Alvorada",
-    "url_aplication":"http://localhost/mysupport/",
+    "name":"MySupport v1.0",
+    "url_aplication":"https://mysupport.oriustecnologia.com/",
     "delay" : 0,
     "security":{
       "session_time":"30",
