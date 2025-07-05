@@ -6,7 +6,7 @@
 
             <a class="navbar-brand" href="<?php echo $Config->app->url_aplication ?>">
 
-                <img src="image/logo.png" alt="MySupport | Gestor Empresarial" width="35" class="me-1">|<img src="image/favicon.png" alt="MySupport | Gestor Empresarial" width="40" class="me-1">
+                <img src="image/logo.png" alt="MySupport | Gestor Empresarial" width="180" class="me-1">|<img src="image/favicon.png" alt="MySupport | Gestor Empresarial" width="40" class="me-1">
 
                 MySupport
 
