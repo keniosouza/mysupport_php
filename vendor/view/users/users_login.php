@@ -1,6 +1,6 @@
 <div class="col-md-12 text-center animate slideIn mt-3">
 
-    <img src="image/logo.png" width="50px"> | <img src="image/favicon.png" width="50px">
+    <img src="image/logo.png" width="120px"> | <img src="image/favicon.png" width="50px">
 
     <div class="my-3">
 
